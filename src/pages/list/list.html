@@ -1,0 +1,35 @@
+<!--
+  Generated template for the ListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+
+  <ion-navbar color="danger">
+    <ion-title>My Daily Task</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding >
+<ion-list>  
+  <h2>Daily To DO List</h2>
+  <ion-item *ngFor="let Task of tasklist">
+  
+    <b>{{Task.name}}</b>
+    <h2>Start Time</h2>
+    {{Task.StartTime}}
+    <h2>Finish Time</h2>
+    {{Task.FinishTime}}
+    {{myTask}}
+{{startTime}}
+{{finishTime}}
+
+
+  </ion-item>
+  </ion-list>
+
+  <button ion-button (click)="OnClickAdd()">Add</button>
+  <button ion-button (click)="OnClickBack()">Back</button> 
+</ion-content>
