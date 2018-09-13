@@ -24,11 +24,12 @@
 </ion-item>
 <ion-item>
     <ion-label fixed>Start Time</ion-label>
-    <ion-input type="text" [(ngModel)]="start" name="start"></ion-input>
+    <ion-datetime displayFormat="h:mm A" [(ngModel)]="start" name="start"></ion-datetime>
   </ion-item>
+
 <ion-item>
     <ion-label fixed>Finish Time</ion-label>
-    <ion-input type="text" [(ngModel)]="Finish" name="finish"></ion-input>
+    <ion-datetime displayFormat="h:mm A" [(ngModel)]="Finish" name="finish"></ion-datetime>
   </ion-item>
 
 <br/>
